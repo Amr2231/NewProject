@@ -1,0 +1,214 @@
+@media screen and (max-width:1400px) {
+    #movingElement.moved {
+        transform: translatex(-463px); 
+        
+        }
+    }
+@media screen and (max-width:1280px) {
+    #movingElement.moved {
+        transform: translatex(-463px); 
+        
+        }
+    }
+@media screen and (max-width:1240px) {
+    #movingElement.moved {
+        transform: translatex(-466px); 
+        
+        }
+}
+@media screen and (max-width:1200px) {
+    #movingElement.moved {
+        transform: translatex(-400px); 
+        
+        }
+}
+@media screen and (max-width:991px) {
+    #movingElement.moved {
+        transform: translatex(-348px); 
+        
+        }
+}
+@media screen and (max-width:767px) {
+
+    #movingElement{
+
+
+        transform: translatey(-348px); 
+        transition: all 400ms ease-in-out;
+
+       
+         height: 55% !important;
+        position: absolute !important;
+        left: 0 !important;
+        width: 100% !important;
+        bottom:  -36% !important; 
+    }
+        #movingElement.moved{
+            transform: translatey(-348px); 
+            transition: all 400ms ease-in-out;
+           
+             height: 45% !important;
+            position: absolute !important;
+            left: 0 !important;
+            width: 100% !important;
+            bottom:  22% !important; 
+        }
+}
+@media screen and (max-width:255px) {
+    #movingElement {
+       height: 57% !important;
+        
+        }
+        #movingElement.moved{
+            transform: translatey(-348px); 
+            transition: all 400ms ease-in-out;
+           
+             height: 45% !important;
+            position: absolute !important;
+            left: 0 !important;
+            width: 100% !important;
+            bottom:  23% !important; 
+        }
+    }
+    @media screen and (max-width:228px) {
+        #movingElement {
+           height: 60% !important;
+            
+            }
+        }
+@media screen and (max-width:195px) {
+    #movingElement {
+       height: 66% !important;
+        
+        }
+        #movingElement.moved{
+            height: 42.4% !important;
+            position: absolute !important;
+            bottom: 25% !important;
+        }
+    }
+@media screen and (max-width:194px) {
+        #movingElement {
+           height: 61.3% !important;
+            
+            }
+    }
+@media screen and (max-width:187px) {
+            #movingElement {
+               height: 61.4% !important;
+                
+     }
+}
+@media screen and (max-width:169px) {
+                #movingElement {
+                   height: 63.9% !important;
+                    
+     }
+ }
+
+
+
+@media screen and (max-width:768px){
+    .media-input{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:1025px) {
+    .About-box {
+        width: 50%;
+        
+    }
+     .info-box{
+        position: absolute !important;
+        top: 0% !important; 
+        height: 190vh !important;
+     }
+    }
+    @media screen and (min-width:767px) and (max-width:1024px) {
+        .About-box {
+            width: 50%;
+            position: relative;
+            bottom: 25%;
+        }
+    }
+@media screen and (max-width:541px) {
+    .About-box {
+        width: 90%;
+    }
+     .info-box{
+        position: absolute !important;
+        top: 0% !important; 
+        height: 190vh !important;
+     }
+    }
+@media screen and (max-width:480px) {
+  
+     .info-box{
+        position: absolute !important;
+        top: 0% !important; 
+        height: 170vh !important;
+     }
+}
+@media screen and (max-width:431px) {
+    .About-box {
+        width: 90%;
+    }
+     .info-box{
+        position: absolute !important;
+        top: 0% !important; 
+        height: 170vh !important;
+     }
+}@media screen and (max-width:415px) {
+    .About-box {
+        width: 90%;
+    }
+     .info-box{
+        position: absolute !important;
+        top: 0% !important; 
+        height: 165vh !important;
+     }
+}
+@media screen and (max-width:400px) {
+    .About-box {
+        width: 90%;
+    }
+     .info-box{
+        position: absolute !important;
+        top: 0% !important; 
+        height: 180vh !important;
+     }
+}
+@media screen and (max-width:345px) {
+    .About-box {
+        width: 90%;
+    }
+     .info-box{
+        position: absolute !important;
+        top: 0% !important; 
+        height: 140vh !important;
+     }
+    }
+     @media screen and (max-width:344px) {
+        .About-box {
+            width: 100%;
+        }
+         .info-box{
+            position: absolute !important;
+            top: 0% !important; 
+            height: 210vh !important;
+         }
+    }
+
+@media screen and (max-width:200px) {
+    .About-box {
+        width: 100%;
+    }
+     .info-box{
+        position: absolute !important;
+        top: 0% !important; 
+        height: 190vh !important;
+     }
+    }

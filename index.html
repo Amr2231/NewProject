@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="shortcut icon" href="login_41dp_8C1AF6_FILL0_wght400_GRAD0_opsz48.png" type="img/png">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <div class="background">
+        <section class="padd-section" id="index">    
+         <div class="container">
+         <div class="row justify-content-center">
+             <div class="col-md-12 col-lg-10 ">
+                 <div class="wrap d-md-flex position-relative">
+                     <div class="login-wrap p-4 p-lg-5  col-md-6">
+                         
+                         <div class="d-flex justify-content-center align-items-center" >
+                             <div class="w-100 text-start">
+                                 <h2>Sign in</h2>
+                             </div>
+                             <div class="social-media w-75 d-flex justify-content-evenly align-items-end">
+                                 <a class="btn btn-icon rounded-5" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                                 <a class="btn btn-icon rounded-5" href="https://www.facebook.com/"><i class="fa-brands fa-twitter"></i></a>
+                             </div> 
+                         </div>
+                         
+                             <div class="group-inputs pt-5 mb-5">
+                                <div class="form-groups mb-2">
+                                 <label for="Username" class=" mb-1 ps-1">email</label>
+                                 <input type="email" required  placeholder="Enter your Email" class="form-control rounded-4" id="signinEmail">
+                                </div>
+                                 <div class="form-groups mb-2">
+                                 <label  for="Password" class="  mb-1 ps-1">Password</label>
+                                 <input type="password" required placeholder="Enter your Password" class="form-control rounded-4" id="signinPassword">
+                                 </div>
+                                 
+                             </div>
+                             <div class="Sign-in pt-3">
+                              <h2 id="Successful2" class="text-center text-success">Success</h2>
+                              <h2 id="Faild2" class="text-center fs-4 text-danger">Email or Password are incorrect</h2>
+                             <button type="submit" class="btn btn-danger w-100 p-2 rounded-5" id="signinButton2" >Sign in</button>
+                         </div>
+                         
+                     </div>
+                     <div id="movingElement" class="position-absolute start-50 w-50 h-100 signup-wrap p-4 p-lg-5 d-flex justify-content-center align-items-center flex-column" >
+                             <h1 id="main" class="text-white text-center">Welcome to login</h1>
+                             <h1 id="sub-main" class="text-white text-center">Welcome to Signup</h1>
+                             <p id="text">Don't have an account?</p>
+                             <p id="content">you have an account?</p>
+                             <div class="btn-sign-up">
+                                 <div class="btn-SignUp w-100">
+                                     <a id="signupButton" class="log-up text-decoration-none btn m-0 rounded-5" href="#">Sign Up</a>
+                                     <a id="signinButton" class="log-up text-decoration-none btn m-0 rounded-5"  href="#">Sign in</a>
+                                 </div>
+                             </div>
+                     </div>
+     
+                         <div class="col-md-6 ">
+                             <div class="p-4 p-lg-5">
+                             <div class="d-flex justify-content-center align-items-center">
+                             <div class="info-sign-up w-100 text-start ">
+                                 <h2>Sign up</h2>
+                             </div>
+                                 <div class="social-media w-75 d-flex justify-content-end align-items-end">
+                                     <a class="btn btn-icon rounded-5" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                                     <a class="btn btn-icon rounded-5" href="https://www.facebook.com/"><i class="fa-brands fa-twitter"></i></a>
+                                 </div> 
+                             </div>
+                             <div class="group-inputs media-input pt-5 mb-2 d-flex">
+                                 <div class="form-groups mb-2 pe-2">
+                                  <label for="Name" class=" mb-1 ps-2">First Name</label>
+                                  <input oninput="validationName()" type="text" required  placeholder="Enter your First Name" class="form-control rounded-4 w-100" id="FirstName">
+                                 </div>
+                                 <div class="form-groups mb-2 pe-2">
+                                   <label for="SecondName" class=" mb-1 ps-2">Second Name</label>
+                                   <input oninput="validationSecondName()" type="text" required  placeholder="Enter your Last Name" class="form-control rounded-4 w-100" id="SecondName">
+                                  </div>
+     
+     
+                                 
+                                  
+                              </div>  
+                              <div class="form-groups mb-2">
+                               <label for="email-signup" class="email-signup  mb-1 ps-2">email</label>
+                               <input oninput="validationEmail()"  type="email" required  placeholder="Enter your Email" class="form-control rounded-4 w-100 " id="signupEmail">
+                              </div>                            
+                               <div class="form-groups mb-5">
+                                 <label  for="password-signup" class="password-signup mb-1 ps-2">Password</label>
+                                 <input oninput="validationPass()" type="password" required placeholder="Enter your Password" class="form-control rounded-4 " id="signupPassword">
+     
+                                 </div>
+                                 <h2 id="Successful" class="text-center text-success">Success</h2>
+                                 <h3 class="text-center text-danger fs-5" id="exist">
+                                  email already exist
+                                 </h3>
+                                 <button type="submit" id="signupButton2" class="btn btn-danger w-100 rounded-4">Sign Up</button>
+     
+     
+                         </div>
+                     </div>
+                    
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div class="info-box position-absolute start-0 top-0 w-100 vh-100 pb-5 d-flex justify-content-center align-items-center d-none py-5">
+         <div class="About-box bg-white p-4 rounded-2 shadow-lg">
+           <header class="box-header w-100 d-flex justify-content-between align-items-center mb-4">
+             <div class="circle d-flex">
+               <span class="rounded-circle me-2"></span>
+               <span class="rounded-circle me-2"></span>
+               <span class="rounded-circle me-2"></span>
+             </div>
+             <button class="btn border-0" id="closeBtn">
+               <i class="fa-solid fa-xmark close fs-3"></i>
+             </button>
+           </header>
+           <p class="m-0 pb-2">
+              Name , Email and Password is not valid , Please follow the rules below :
+           </p>
+           <ol class="rules list-unstyled m-0">
+             <li>
+               <i class="fa-regular fa-circle-right p-2 text-danger"></i>Name must include: letter, number and symbol.
+             </li>
+             <li>
+                 <i class="fa-regular fa-circle-right p-2 text-danger"></i>Gmail must include: No spaces
+                 <li>
+                     <i class="fa-regular fa-circle-right p-2 text-danger"></i>Gmail must include: An “@” symbol
+                   </li>
+                   <li>
+                     <i class="fa-regular fa-circle-right p-2 text-danger"></i>Gmail must include: A period (“.”) after the “@” symbol
+                   </li>
+               </li>
+               <li>
+                 <i class="fa-regular fa-circle-right p-2 text-danger"></i>Pass must include: letter, number and symbols 
+               </li>
+               <li>
+                <i class="fa-regular fa-circle-right p-2 text-danger"></i>Pass should not be less than 8 words
+              </li>
+               
+           </ol>
+         </div>
+       </div>
+     </section>
+    </div>
+    
+    
+    
+    
+    
+    
+    <section id="Home" class="d-none">
+      <nav class="navbar navbar-expand-lg bg-primary bg-gradient">
+        <div class="container d-flex justify-content-between align-items-center">
+          <a class="navbar-brand fs-4 fw-bold" href="#">Login System</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a onclick="logout()" class="nav-link active border border-2 border-warning text-center " aria-current="page" href="#">Logout</a>
+              </li>
+            </ul>
+    
+          </div>
+        </div>
+      </nav>
+    
+    
+      <div class="container my-5 text-center height d-flex justify-content-center align-items-center">
+        <div class="group m-auto w-75 p-5">
+            <div class="text-center fw-bolder fs-3" id="exist2"></div>
+    
+        </div>
+    </div>
+    
+    </section>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
